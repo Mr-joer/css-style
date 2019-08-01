@@ -1,0 +1,24 @@
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.waterfall{
+	/*重要*/column-count: 4;/*将整体强制分为4列*/
+	-webkit-column-count:4;/*兼容safari和chrome*/
+	-moz-column-count:4;/*兼容火狐*/
+	/*重要*/column-gap:2em;/*控制强制列中的间隙*/
+	-webkit-column-gap:2em;
+	-moz-column-count:2em;
+}
+.item{
+	padding: 1em;
+	margin: 0 0 1em 0;/*上，右，下，左*/
+	border: solid 1px;
+	/*重要*/break-inside: avoid;/*控制一个强制列中显示一个完整的区块*/
+	-webkit-break-inside:avoid;
+	-moz-break-inside:avoid;
+}
+.item img{
+	width: 100%;
+	margin-bottom: 10px;
+}

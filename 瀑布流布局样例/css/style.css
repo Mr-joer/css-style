@@ -1,0 +1,48 @@
+body{ background-color: #000;}
+/*瀑布流开始*/
+.wall-column {
+  width: 50%;
+  float: left;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+.article {
+  margin: 0 0 8% 0;
+  padding: 5%;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  transition: all 100;
+  overflow: hidden;
+  position: relative;
+}
+.article:hover{ transform: scale(1.01);}
+.article a{
+  text-decoration: none;
+}
+.article img {
+  width: 100%;
+  margin: 0 0 5% 0;
+}
+.article a{ color: #666;}
+.article p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%; font-size: 1.2em;
+  line-height: 1.5;
+}
+.article small{ font-size: 1em; color: #ff0000; line-height: 1.5;}
+.article input{
+  width: 20%;
+  padding: 0.6em;
+  border-radius: 0.4em;
+  font-size: 1.1em;
+  background-color: #f60;
+  border: none; position: absolute;
+  bottom: 3%; right: 5%;
+  color: #fff;
+  box-shadow: 0 0 7px #d7d7d7;
+  cursor: pointer;
+}
+/*瀑布流结束*/
